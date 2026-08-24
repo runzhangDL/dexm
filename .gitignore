@@ -4,7 +4,23 @@ __pycache__/
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
 # Virtual environments
-.venv
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated assets / recordings
+_static/
+
+# OS files
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Environment variables
+.env

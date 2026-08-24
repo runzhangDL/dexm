@@ -20,5 +20,6 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "jupyterlab>=4.6.3",
     "viser>=1.1.0",
 ]
