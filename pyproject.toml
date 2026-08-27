@@ -23,3 +23,23 @@ dev = [
     "jupyterlab>=4.6.3",
     "viser>=1.1.0",
 ]
+
+[tool.ruff]
+line-length = 80
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort (import sorting)
+    "D",    # pydocstyle (docstring conventions)
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
