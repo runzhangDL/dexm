@@ -374,7 +374,8 @@ class DexmBuilder:
         self.cable_num_segments = int(self.cable_length / 0.010)
         points, quats = (
             newton.utils.create_straight_cable_points_and_quaternions(
-                start=self.cable_center - wp.vec3(0.5 * self.cable_length, 0.0, 0.0),
+                start=self.cable_center
+                - wp.vec3(0.5 * self.cable_length, 0.0, 0.0),
                 direction=wp.vec3(1.0, 0.0, 0.0),
                 length=self.cable_length,
                 num_segments=self.cable_num_segments,
